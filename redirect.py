@@ -6,7 +6,7 @@ load_dotenv()
 
 app = Flask(__name__)
 
-redirect_link = os.getenv("REDIRECT_LINK")
+redirect_link = os.getenv("REDIRECT_LINK", "https://www.google.com/")
 
 @app.route('/')
 def index():
